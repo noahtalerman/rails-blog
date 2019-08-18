@@ -1,0 +1,28 @@
+.article_title {
+    font-size: 3vw;
+    color: #F4F7F2;
+}
+
+.article_title:hover {
+    color: #FFA300;
+}
+
+.action_link {
+    margin: 4vh 0 2vh 4vw;
+    font-size: 2vw;
+    color: #F4F7F2;
+}
+
+.action_link:hover {
+    color: #FFA300;
+}
+
+ul {
+    margin: 0;
+}
+
+#articles {
+    display: block;
+    margin: 2vh 0 2vh 4vw;
+    padding-left: 4vw;
+}

@@ -1,0 +1,80 @@
+.delete_btn {
+    margin: 0 0 2vh 4vw;
+    font-size: 2vw;
+    color: #F4F7F2;
+}
+
+.delete_btn:hover {
+    color: #FFA300;
+}
+
+.edit_btn {
+    margin: 0 0 2vh 4vw;
+    font-size: 2vw;
+    color: #F4F7F2;
+}
+
+.edit_btn:hover {
+    color: #FFA300;
+}
+
+.article_body {
+    font-size: 3vw;
+    margin: 0 0 4vh 4vw;
+    padding-left: 4vw;
+    min-height: 20vh;
+}
+
+.comments {
+    display: table;
+    margin-left: 8vw;
+}
+
+.comment_all {
+    display: inline-block;
+    border: 1px solid #F4F7F2;
+    margin-bottom: 4vh;
+    padding: 1em;
+    max-width: 50vw;
+}
+
+.comments_title {
+    display: inline-block;
+    font-size: 3vw;
+    margin: 4vh 0 4vh 4vw;
+}
+
+.comment_author {
+    display: table;
+    margin: 0 0 1vh 0;
+}
+
+.comment_body {
+    display: table;
+}
+
+.date {
+    font-size: 1vw;
+}
+
+.comment_btn {
+    display: inline;
+    background-color: #140E17;
+    color: #F4F7F2;
+    margin: 0 0 2vh 4vw;
+    font-family: proxima nova;
+    font-size: 2vw;
+    border: 1px solid #F4F7F2;
+    width: 16vw;
+}
+
+.comment_btn:hover {
+    color: #FFA300;
+    border: 1px solid #FFA300;
+    cursor: pointer;
+}
+
+.new_comment {
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
