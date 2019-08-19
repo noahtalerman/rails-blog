@@ -15,6 +15,24 @@
     margin-bottom: 2vh;
 }
 
+.tags_input {
+    margin: 0 0 4vh 4vw;
+}
+
+.tags_input label {
+    font-size: 3vw;
+    margin-bottom: 2vh;
+}
+
+.tags_input input {
+    background-color: #140E17;
+    color:#F4F7F2;
+    font-family: proxima nova;
+    font-size: 2vw;
+    border: 1px solid #F4F7F2;
+    width: 25vw;
+}
+
 .submit_btn {
     margin: 0 0 4vh 4vw;
 }

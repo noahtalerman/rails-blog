@@ -1,6 +1,41 @@
+.article_title {
+    display: inline;
+    font-size: 3vw;
+}
+
+.tags {
+    display: inline;
+    margin-left: 3vw;
+}
+
+.tag_link  {
+    color: #F4F7F2;
+    font-size: 2vw;
+    padding: 0.25em 0.25em;
+    margin-right: 2vw;
+    border: 1px solid #F4F7F2;
+    text-decoration: none;
+}
+
+.tag_link:hover {
+    color: #FFA300;
+    border: 1px solid #FFA300;
+    text-decoration: underline;
+}
+
+.action_link {
+    margin: 4vh 0 2vh 4vw;
+    font-size: 1.5vw;
+    color: #F4F7F2;
+}
+
+.action_link:hover {
+    color: #FFA300;
+}
+
 .delete_btn {
     margin: 0 0 2vh 4vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #F4F7F2;
 }
 
@@ -10,7 +45,7 @@
 
 .edit_btn {
     margin: 0 0 2vh 4vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #F4F7F2;
 }
 
@@ -19,8 +54,8 @@
 }
 
 .article_body {
-    font-size: 3vw;
-    margin: 0 0 4vh 4vw;
+    font-size: 2vw;
+    margin: 4vh 0 4vh 4vw;
     padding-left: 4vw;
     min-height: 20vh;
 }
@@ -54,7 +89,7 @@
 }
 
 .date {
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 .comment_btn {
@@ -65,13 +100,17 @@
     font-family: proxima nova;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
-    width: 16vw;
+    padding: 0.25em 1em;
 }
 
 .comment_btn:hover {
     color: #FFA300;
     border: 1px solid #FFA300;
     cursor: pointer;
+}
+
+.comment_btn:focus {
+    outline: none;
 }
 
 .new_comment {

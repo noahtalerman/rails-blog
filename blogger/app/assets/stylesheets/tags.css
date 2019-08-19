@@ -1,0 +1,28 @@
+.tags_list {
+    display: flex;
+    list-style-type: none;
+}
+
+.tags_title {
+    font-size: 6vw;
+}
+
+.tag_link_small {
+    list-style-type: none;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    color: #FFA300;
+    padding: 0.25em 0.25em;
+}
+
+.tag_link_small  {
+    color: #F4F7F2;
+    border: 1px solid #F4F7F2;
+    text-decoration: none;
+}
+
+.tag_link_small:hover {
+    color: #FFA300;
+    border: 1px solid #FFA300;
+    text-decoration: underline;
+}
