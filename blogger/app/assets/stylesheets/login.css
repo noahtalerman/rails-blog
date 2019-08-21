@@ -1,0 +1,17 @@
+.login_container {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+
+.log_in input {
+    background-color: #140E17;
+    color: #F4F7F2;
+    border: 1px solid #F4F7F2;
+    font-family: proxima-nova, sans-serif;
+    text-align: center;
+}
+
+.log_in input:focus {
+    border: 1px solid #FFA300;
+}

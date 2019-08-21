@@ -3,4 +3,5 @@
     <p class="comment_body"><%= comment.body %></p>
     <p class="date">Posted <%= distance_of_time_in_words_to_now(comment.created_at)%> ago</p>
 </div>
+<%=link_to 'Delete Comment', [comment.article, comment], method: :delete, data: {confirm: "Really delete the comment?"}, class: 'delete_btn' %>
 <br>

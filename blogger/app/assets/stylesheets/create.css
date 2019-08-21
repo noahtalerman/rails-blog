@@ -1,13 +1,33 @@
 .title_input {
-    margin: 0 0 4vh 4vw;
+    margin: 0 0 4vh 0;
 }
 
 .title_input label {
     font-size: 3vw;
 }
 
+.image_input {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image_input label {
+    font-size: 3vw;
+}
+
+.image_input input[type="file"] {
+    margin-bottom: 2vh;
+    background-color: #140E17;
+    color: #F4F7F2;
+    font-family: proxima-nova, sans-serif;
+}
+
+.image_input figure {
+    margin: 0 0 0 2vw;
+}
+
 .body_input {
-    margin: 0 0 4vh 4vw;
+    margin: 0 0 4vh 0;
 }
 
 .body_input label {
@@ -16,7 +36,7 @@
 }
 
 .tags_input {
-    margin: 0 0 4vh 4vw;
+    margin: 0 0 4vh 0;
 }
 
 .tags_input label {
@@ -27,20 +47,20 @@
 .tags_input input {
     background-color: #140E17;
     color:#F4F7F2;
-    font-family: proxima nova;
+    font-family: proxima-nova, sans-serif;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
     width: 25vw;
 }
 
 .submit_btn {
-    margin: 0 0 4vh 4vw;
+    margin: 0 0 4vh 0;
 }
 
 .title_input input {
     background-color: #140E17;
     color:#F4F7F2;
-    font-family: proxima nova;
+    font-family: proxima-nova, sans-serif;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
     width: 25vw;
@@ -49,7 +69,7 @@
 .submit_btn input {
     background-color: #140E17;
     color:#F4F7F2;
-    font-family: proxima nova;
+    font-family: proxima-nova, sans-serif;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
     width: 16vw;
@@ -64,7 +84,7 @@
 textarea {
     background-color: #140E17;
     color:#F4F7F2;
-    font-family: proxima nova;
+    font-family: proxima-nova, sans-serif;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
     width: 50vw;

@@ -1,34 +1,106 @@
-.article_title_link {
-    font-size: 3vw;
-    color: #F4F7F2;
+.index_container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.article_title_link:hover {
+.list_container {
+    width: 60vw;
+    margin-left: 10vw;
+}
+
+.tags_container {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-right: 5vw;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article_title_li {
+    max-width: 40vw;
+    max-height: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.article_title_link a, a.article_title_link{
+    font-size: 3vw;
+    color: #F4F7F2;
+    max-width: 5vw;
+    text-decoration: none;
+}
+
+.article_title_link a:hover, a.article_title_link:hover {
     color: #FFA300;
+}
+
+.article_title_link_header {
+    line-height: 0.8em;
+}
+
+.article_preview {
+    margin-top: 1vh;
+    color: #BCC2B7;
+}
+
+.article_post_date {
+    margin-top: 2vh;
+    font-size: 1.2vw;
+    color: #BCC2B7;
+}
+
+.article_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 20vh;
+    margin-bottom: 2vh;
+}
+
+.img_mini {
+    margin: 0;
+}
+
+.img_mini img {
+    height: 10vw;
+    width: 10vw;
+    object-fit: cover;
 }
 
 .tags_list {
-    margin: 0 0 4vh 4vw;
+    margin: 0 0 4vh 0;
     padding: 0;
 }
 
-.tags_link {
-    display: block;
-    font-size: 3vw;
-    margin: 2vh 0 0 4vw;
+.tag_link  {
     color: #F4F7F2;
+    font-size: 2vw;
+    padding: 0.25em 0.25em;
+    margin: 0 0 2vh 1vw;
+    border: 1px solid #F4F7F2;
+    text-decoration: none;
 }
 
-.tags_link:hover {
+.tag_link:hover {
     color: #FFA300;
+    border: 1px solid #FFA300;
+    text-decoration: underline;
 }
 
 .create_link {
-    display: inline-block;
+    display: table;
     background-color: #140E17;
     color: #F4F7F2;
-    margin: 2vh 0 0 4vw;
-    font-family: proxima nova;
+    margin: 0;
+    font-family: proxima-nova, sans-serif;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
     padding: 0.2em 1em;
@@ -46,7 +118,8 @@ ul {
 }
 
 .articles_list {
-    display: block;
-    margin: 2vh 0 2vh 4vw;
-    padding-left: 4vw;
+    width: 100%;
+    margin: 2vh 0 2vh 0;
+    list-style-type: none;
+    padding: 0;
 }

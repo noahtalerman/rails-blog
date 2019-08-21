@@ -1,13 +1,38 @@
-<h1>All Articles</h1>
-
-<ul class="articles_list">
-    <% @articles.each do |article| %>
-        <li>
-            <%= link_to article.title, article_path(article), class: 'article_title_link' %>
-        </li>
-    <% end %>
-</ul>
-
-<%= link_to "Tags", tags_path, class: 'tags_link' %>
-
-<%= link_to "Create New Article", new_article_path, class: 'create_link' %>
+<div class="index_container">
+    <div class="list_container">
+        <div class="header">
+            <h1>Articles</h1>
+            <% if admin? %>
+                <%= link_to "Create New Article", new_article_path, class: 'create_link' %>
+            <% end %>
+        </div>
+        <ul class="articles_list">
+            <% @articles.each do |article| %>
+                <div class="article_container">
+                    <li class="article_title_li">
+                        <p class="article_title_link">
+                            <%= link_to article.title, article_path(article), class: "article_title_link_header" %>
+                        </p>
+                        <p class="article_preview">
+                            <%= article.preview %>
+                        </p>
+                        <p class="article_post_date">
+                            <%= distance_of_time_in_words_to_now(article.created_at) %> ago
+                        </p>
+                    </li>
+                    <figure class="img_mini">
+                        <%= link_to image_tag(article.image.url), article_path(article) %>
+                    </figure>
+                </div>
+            <% end %>
+        </ul>
+    </div>
+    <div class="tags_container">
+        <h1>Tags</h1>
+        <div class="tags">
+                <% @tags.each do |tag| %>
+                    <%= link_to tag.name, tag_path(tag), class: "tag_link" %>
+                <% end %>
+        </div>
+    </div>
+</div>

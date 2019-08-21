@@ -1,14 +1,29 @@
 body {
-    font-family: proxima nova;
     background-color: #140E17;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
     color: #F4F7F2;
     margin: 0;
 }
 
+.outer_container {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: center;
+}
+
 h1 {
     display: inline-block;
-    font-size: 8vw;
-    margin: 2vh 0 2vh 4vw;
+    font-size: 6vw;
+    font-weight: 400;
+    margin: 2vh 0 2vh 0;
     letter-spacing: 0.02em;
 }
 
@@ -17,5 +32,20 @@ p {
 }
 
 .flash {
-    margin: 2vh 0 2vh 4vw;
+    margin: 20vh 0;
+    position: absolute;
+    left: 4vh;
+    top: 0;
+    background: none;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    /* padding-left: 10px; */
+    /* padding-right: 50px; */
+    font-family: proxima-nova, sans-serif;
 }

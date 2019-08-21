@@ -1,11 +1,15 @@
-<h1 class="tags_title">Articles Tagged with <i><%= @tag.name %></i></h1>
+<div class="outer_container">
+    <div class="container">
+        <h1 class="tags_title">Articles Tagged with <i><%= @tag.name %></i></h1>
 
-<ul class="articles_list">
-    <% @tag.articles.each do |article| %>
-        <li>
-            <%= link_to article.title, article_path(article), class: "article_title_link" %>
-        </li>
-    <% end %>
-</ul>
+        <ul class="articles_list">
+            <% @tag.articles.each do |article| %>
+                <li>
+                    <%= link_to article.title, article_path(article), class: "article_title_link" %>
+                </li>
+            <% end %>
+        </ul>
 
-<%= link_to '<< Back to Articles List', articles_path, class: 'action_link' %>
+        <%= link_to '<< Back to Tags List', tags_path, class: 'action_link' %>
+    </div>
+</div>

@@ -1,30 +1,46 @@
 .article_title {
-    display: inline;
-    font-size: 3vw;
+    margin: 4vh 0 0 0;
+    font-family: adobe-caslon-pro, serif;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.article_preview_main {
+    color: #BCC2B7;
+    font-weight: 300;
+    font-size: 2vw;
+    margin: 0 0 2vh 0;
+}
+.tags_and_links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.links_container {
+    margin-bottom: 1vh;
 }
 
 .tags {
-    display: inline;
-    margin-left: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20vw;
+    justify-content: flex-end;
 }
 
-.tag_link  {
-    color: #F4F7F2;
-    font-size: 2vw;
-    padding: 0.25em 0.25em;
-    margin-right: 2vw;
-    border: 1px solid #F4F7F2;
-    text-decoration: none;
+.header_img {
+    
 }
 
-.tag_link:hover {
-    color: #FFA300;
-    border: 1px solid #FFA300;
-    text-decoration: underline;
+.header_img img{
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
 }
 
 .action_link {
-    margin: 4vh 0 2vh 4vw;
+    margin: 4vh 0 2vh 0;
     font-size: 1.5vw;
     color: #F4F7F2;
 }
@@ -34,7 +50,7 @@
 }
 
 .delete_btn {
-    margin: 0 0 2vh 4vw;
+    margin: 0 0 2vh 0;
     font-size: 1.5vw;
     color: #F4F7F2;
 }
@@ -44,7 +60,7 @@
 }
 
 .edit_btn {
-    margin: 0 0 2vh 4vw;
+    margin: 0 0 2vh 0;
     font-size: 1.5vw;
     color: #F4F7F2;
 }
@@ -54,15 +70,14 @@
 }
 
 .article_body {
+    font-family: adobe-caslon-pro, serif;
     font-size: 2vw;
-    margin: 4vh 0 4vh 4vw;
-    padding-left: 4vw;
+    font-weight: 400;
+    margin: 4vh 0 4vh 0;
     min-height: 20vh;
 }
 
 .comments {
-    display: table;
-    margin-left: 8vw;
 }
 
 .comment_all {
@@ -76,28 +91,30 @@
 .comments_title {
     display: inline-block;
     font-size: 3vw;
-    margin: 4vh 0 4vh 4vw;
+    margin: 4vh 0 4vh 0;
 }
 
 .comment_author {
+    font-weight: 400;
     display: table;
     margin: 0 0 1vh 0;
 }
 
 .comment_body {
-    display: table;
+    font-weight: 300;
 }
 
 .date {
-    font-size: 1.5vw;
+    font-weight: 300;
+    font-size: 1vw;
 }
 
 .comment_btn {
     display: inline;
     background-color: #140E17;
     color: #F4F7F2;
-    margin: 0 0 2vh 4vw;
-    font-family: proxima nova;
+    margin: 0 0 2vh 2vw;
+    font-family: proxima-nova, sans-serif;
     font-size: 2vw;
     border: 1px solid #F4F7F2;
     padding: 0.25em 1em;
