@@ -14,7 +14,10 @@
 
   <body>
     <%= render partial: 'layouts/header' %>
-    <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
+    <div class="outer_container">
+        <div class="container">
+            <%= yield %>
+        </div>
+    </div>
   </body>
 </html>

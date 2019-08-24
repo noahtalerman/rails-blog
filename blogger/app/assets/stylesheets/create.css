@@ -3,7 +3,15 @@
 }
 
 .title_input label {
-    font-size: 3vw;
+    font-size: var(--font1);
+}
+
+.preview_input {
+    margin: 0 0 4vh 0;
+}
+
+.preview_input label {
+    font-size: var(--font1);
 }
 
 .image_input {
@@ -12,13 +20,13 @@
 }
 
 .image_input label {
-    font-size: 3vw;
+    font-size: var(--font1);
 }
 
 .image_input input[type="file"] {
-    margin-bottom: 2vh;
-    background-color: #140E17;
-    color: #F4F7F2;
+    margin-bottom: 4vh;
+    background-color: var(--background);
+    color: var(--color);
     font-family: proxima-nova, sans-serif;
 }
 
@@ -31,7 +39,7 @@
 }
 
 .body_input label {
-    font-size: 3vw;
+    font-size: var(--font1);
     margin-bottom: 2vh;
 }
 
@@ -40,16 +48,16 @@
 }
 
 .tags_input label {
-    font-size: 3vw;
+    font-size: var(--font1);
     margin-bottom: 2vh;
 }
 
 .tags_input input {
-    background-color: #140E17;
-    color:#F4F7F2;
+    background-color: var(--background);
+    color:var(--color);
     font-family: proxima-nova, sans-serif;
-    font-size: 2vw;
-    border: 1px solid #F4F7F2;
+    font-size: var(--font1);
+    border: 1px solid var(--color);
     width: 25vw;
 }
 
@@ -58,45 +66,63 @@
 }
 
 .title_input input {
-    background-color: #140E17;
-    color:#F4F7F2;
-    font-family: proxima-nova, sans-serif;
-    font-size: 2vw;
-    border: 1px solid #F4F7F2;
+    background-color: var(--background);
+    color:var(--color);
+    font-family: adobe-caslon-pro, serif;
+    font-size: 1.5vw;
+    border: 1px solid var(--color);
+    padding: 0.5em;
     width: 25vw;
 }
 
 .submit_btn input {
-    background-color: #140E17;
-    color:#F4F7F2;
+    background-color: var(--background);
+    color:var(--color);
     font-family: proxima-nova, sans-serif;
-    font-size: 2vw;
-    border: 1px solid #F4F7F2;
-    width: 16vw;
+    font-size: 1.5vw;
+    border: 0.5px solid var(--color);
+    padding: 0.3em 0.25em;
 }
 
 .submit_btn input:hover {
-    color: #FFA300;
-    border: 1px solid #FFA300;
+    color: var(--secondary);
+    border: 0.5px solid var(--secondary);
     cursor: pointer;
 }
 
-textarea {
-    background-color: #140E17;
-    color:#F4F7F2;
-    font-family: proxima-nova, sans-serif;
-    font-size: 2vw;
-    border: 1px solid #F4F7F2;
+.preview_input textarea {
+    background-color: var(--background);
+    color:var(--color);
+    font-family: adobe-caslon-pro, serif;
+    font-size: 1.5vw;
+    border: 1px solid var(--color);
+    padding: 0.5em;
+    width: 50vw;
+    height: 10vh;
+}
+
+.body_input textarea {
+    background-color: var(--background);
+    color:var(--color);
+    font-family: adobe-caslon-pro, serif;
+    font-size: 1.5vw;
+    border: 1px solid var(--color);
+    padding: 0.5em;
     width: 50vw;
     height: 30vh;
 }
 
+.action_links {
+    display: flex;
+    justify-content: space-between;
+}
+
 input:focus {
-    border: 1px solid #FFA300;
+    border: 1px solid var(--secondary);
     outline: none;
 }
 
 textarea:focus {
-    border: 1px solid #FFA300;
+    border: 1px solid var(--secondary);
     outline: none;
 }

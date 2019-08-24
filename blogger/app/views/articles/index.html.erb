@@ -1,11 +1,5 @@
 <div class="index_container">
     <div class="list_container">
-        <div class="header">
-            <h1>Articles</h1>
-            <% if admin? %>
-                <%= link_to "Create New Article", new_article_path, class: 'create_link' %>
-            <% end %>
-        </div>
         <ul class="articles_list">
             <% @articles.each do |article| %>
                 <div class="article_container">
@@ -27,12 +21,13 @@
             <% end %>
         </ul>
     </div>
-    <div class="tags_container">
-        <h1>Tags</h1>
-        <div class="tags">
-                <% @tags.each do |tag| %>
-                    <%= link_to tag.name, tag_path(tag), class: "tag_link" %>
-                <% end %>
+    <div class="custom_container">
+        <button class="theme_btn">Light</button>
+        <div class="text_size_btns">
+            <button class="text_btn" id="0">Aa</button>
+            <button class="text_btn" id="0.5">Aa</button>
+            <button class="text_btn" id="1">Aa</button>
+            <button class="text_btn" id="1.5">Aa</button>
         </div>
     </div>
 </div>

@@ -1,9 +1,76 @@
+:root {
+    --color: #F4F7F2;
+    --secColor: #BCC2B7;
+    --background:#140E17;
+    --secondary:#FFA300;
+    --font0: 4vw;
+    --font1: 2vw;
+    --font2: 1.7vw;
+    --font3: 1.2vw;
+    --font4: 1vw;
+
+}
+
+body, h1, h2, h3, p, a, button, div {
+    transition: background-color 0.5s linear;
+}
+
 body {
-    background-color: #140E17;
+    background-color: var(--background);
     font-family: proxima-nova, sans-serif;
-    font-weight: 300;
-    color: #F4F7F2;
+    font-weight: 400;
+    color: var(--color);
     margin: 0;
+}
+
+.logo {
+    margin: 0;
+    line-height: 1;
+    margin: 5vh 0 0 10vw;
+}
+
+.logo a{
+    font-family: adobe-caslon-pro, serif;
+    color: var(--color);
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.logo a:hover {
+    color: var(--secondary);
+}
+
+.header {
+    background: var(--background);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-weight: 300;
+    z-index: 2;
+}
+
+.header ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 1em 0 1em 10vw;
+}
+
+.underline {
+    position: sticky;
+    border-bottom: 1px solid var(--color);
+}
+
+.cover {
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background: var(--background);
+    z-index: 1;
+}
+
+.main_link {
+    text-decoration: none;
 }
 
 .outer_container {
@@ -21,10 +88,9 @@ body {
 
 h1 {
     display: inline-block;
-    font-size: 6vw;
+    font-size: var(--font0);
     font-weight: 400;
     margin: 2vh 0 2vh 0;
-    letter-spacing: 0.02em;
 }
 
 p {
@@ -32,7 +98,7 @@ p {
 }
 
 .flash {
-    margin: 20vh 0;
+    margin: 30vh 0;
     position: absolute;
     left: 4vh;
     top: 0;
@@ -48,4 +114,21 @@ p {
     /* padding-left: 10px; */
     /* padding-right: 50px; */
     font-family: proxima-nova, sans-serif;
+    font-size: var(--font2);
+}
+
+.action_link {
+    background-color: var(--background);
+    color: var(--color);
+    margin: 0;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.5vw;
+    border: 1px solid var(--color);
+    padding: 0.25em 1em;
+    text-decoration: none;
+}
+
+.action_link:hover {
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
 }

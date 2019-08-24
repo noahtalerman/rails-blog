@@ -9,6 +9,7 @@ class TagsController < ApplicationController
     end
 
     def show
+        @tags = Tag.all
         @tag = Tag.find(params[:id])
     end
 

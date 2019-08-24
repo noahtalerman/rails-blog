@@ -2,13 +2,13 @@
     margin: 4vh 0 0 0;
     font-family: adobe-caslon-pro, serif;
     font-weight: 600;
-    font-size: 4vw;
+    font-size: var(--font0);
 }
 
 .article_preview_main {
-    color: #BCC2B7;
+    color: var(--secColor);
     font-weight: 300;
-    font-size: 2vw;
+    font-size: var(--font1);
     margin: 0 0 2vh 0;
 }
 .tags_and_links {
@@ -39,39 +39,29 @@
     object-fit: cover;
 }
 
-.action_link {
-    margin: 4vh 0 2vh 0;
-    font-size: 1.5vw;
-    color: #F4F7F2;
-}
-
-.action_link:hover {
-    color: #FFA300;
-}
-
 .delete_btn {
     margin: 0 0 2vh 0;
     font-size: 1.5vw;
-    color: #F4F7F2;
+    color: var(--color);
 }
 
 .delete_btn:hover {
-    color: #FFA300;
+    color: var(--secondary);
 }
 
 .edit_btn {
     margin: 0 0 2vh 0;
     font-size: 1.5vw;
-    color: #F4F7F2;
+    color: var(--color);
 }
 
 .edit_btn:hover {
-    color: #FFA300;
+    color: var(--secondary);
 }
 
 .article_body {
     font-family: adobe-caslon-pro, serif;
-    font-size: 2vw;
+    font-size: var(--font1);
     font-weight: 400;
     margin: 4vh 0 4vh 0;
     min-height: 20vh;
@@ -82,7 +72,7 @@
 
 .comment_all {
     display: inline-block;
-    border: 1px solid #F4F7F2;
+    border: 1px solid var(--color);
     margin-bottom: 4vh;
     padding: 1em;
     max-width: 50vw;
@@ -90,40 +80,44 @@
 
 .comments_title {
     display: inline-block;
-    font-size: 3vw;
+    font-size: var(--font1);
     margin: 4vh 0 4vh 0;
 }
 
 .comment_author {
+    font-size: var(--font1);
     font-weight: 400;
     display: table;
     margin: 0 0 1vh 0;
 }
 
 .comment_body {
+    font-size: var(--font2);
     font-weight: 300;
 }
 
 .date {
     font-weight: 300;
-    font-size: 1vw;
+    font-size: var(--font4);
 }
 
 .comment_btn {
     display: inline;
-    background-color: #140E17;
-    color: #F4F7F2;
+    background-color: var(--background);
+    color: var(--color);
     margin: 0 0 2vh 2vw;
     font-family: proxima-nova, sans-serif;
-    font-size: 2vw;
-    border: 1px solid #F4F7F2;
-    padding: 0.25em 1em;
+    font-size: var(--font1);
+    text-decoration: underline;
+    border: none;
 }
 
 .comment_btn:hover {
-    color: #FFA300;
-    border: 1px solid #FFA300;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
     cursor: pointer;
+    text-decoration: underline;
+    border: none;
 }
 
 .comment_btn:focus {

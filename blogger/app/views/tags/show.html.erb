@@ -1,15 +1,24 @@
 <div class="outer_container">
     <div class="container">
-        <h1 class="tags_title">Articles Tagged with <i><%= @tag.name %></i></h1>
-
         <ul class="articles_list">
             <% @tag.articles.each do |article| %>
-                <li>
-                    <%= link_to article.title, article_path(article), class: "article_title_link" %>
-                </li>
+                <div class="article_container">
+                    <li class="article_title_li">
+                        <p class="article_title_link">
+                            <%= link_to article.title, article_path(article), class: "article_title_link_header" %>
+                        </p>
+                        <p class="article_preview">
+                            <%= article.preview %>
+                        </p>
+                        <p class="article_post_date">
+                            <%= distance_of_time_in_words_to_now(article.created_at) %> ago
+                        </p>
+                    </li>
+                    <figure class="img_mini">
+                        <%= link_to image_tag(article.image.url), article_path(article) %>
+                    </figure>
+                </div>
             <% end %>
         </ul>
-
-        <%= link_to '<< Back to Tags List', tags_path, class: 'action_link' %>
     </div>
 </div>

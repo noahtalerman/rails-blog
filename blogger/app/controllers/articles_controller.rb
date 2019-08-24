@@ -1,5 +1,7 @@
 class ArticlesController < ApplicationController
     include ArticlesHelper
+    
+    layout "application", only: :index;
 
     def index
         @articles = Article.all
@@ -18,17 +20,19 @@ class ArticlesController < ApplicationController
 
     def show
         @article = Article.find(params[:id])
-
+        @tags = Tag.all
         @comment = Comment.new
         @comment.article_id = @article.id
     end
 
     def new
         @article = Article.new
+        @tags = Tag.all
     end
 
     def edit
         @article = Article.find(params[:id])
+        @tags = Tag.all
     end
 
     def create

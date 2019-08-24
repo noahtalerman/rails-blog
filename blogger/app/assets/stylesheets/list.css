@@ -17,13 +17,6 @@
     margin-right: 5vw;
 }
 
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .article_title_li {
     max-width: 40vw;
     max-height: 20vw;
@@ -32,29 +25,31 @@
 }
 
 .article_title_link a, a.article_title_link{
-    font-size: 3vw;
-    color: #F4F7F2;
+    font-size: var(--font1);
+    color: var(--color);
     max-width: 5vw;
     text-decoration: none;
 }
 
 .article_title_link a:hover, a.article_title_link:hover {
-    color: #FFA300;
+    color: var(--secondary);
 }
 
 .article_title_link_header {
+    font-weight: 700;
     line-height: 0.8em;
 }
 
 .article_preview {
+    font-size: var(--font2);
     margin-top: 1vh;
-    color: #BCC2B7;
+    color: var(--secColor);
 }
 
 .article_post_date {
     margin-top: 2vh;
-    font-size: 1.2vw;
-    color: #BCC2B7;
+    font-size: var(--font3);
+    color: var(--secColor);
 }
 
 .article_container {
@@ -81,35 +76,32 @@
 }
 
 .tag_link  {
-    color: #F4F7F2;
-    font-size: 2vw;
-    padding: 0.25em 0.25em;
-    margin: 0 0 2vh 1vw;
-    border: 1px solid #F4F7F2;
+    color: var(--color);
+    font-size: 1.5vw;
+    padding: 0;
+    margin: 0 1vw 2vh 0;
     text-decoration: none;
 }
 
 .tag_link:hover {
-    color: #FFA300;
-    border: 1px solid #FFA300;
+    color: var(--secondary);
     text-decoration: underline;
 }
 
 .create_link {
-    display: table;
-    background-color: #140E17;
-    color: #F4F7F2;
+    background-color: var(--background);
+    color: var(--color);
     margin: 0;
     font-family: proxima-nova, sans-serif;
-    font-size: 2vw;
-    border: 1px solid #F4F7F2;
-    padding: 0.2em 1em;
+    font-size: 1.5vw;
+    border: 1px solid var(--color);
+    padding: 0.25em 1em;
     text-decoration: none;
 }
 
 .create_link:hover {
-    color: #FFA300;
-    border: 1px solid #FFA300;
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
     cursor: pointer;
 }
 
@@ -122,4 +114,26 @@ ul {
     margin: 2vh 0 2vh 0;
     list-style-type: none;
     padding: 0;
+}
+
+.theme_btn {
+    background-color: var(--background);
+    color: var(--color);
+    margin: 0;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    border: 1px solid var(--color);
+    padding: 0.25em 1em;
+    text-decoration: none;
+}
+
+.theme_btn:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+}
+
+.theme_btn:focus {
+    outline: none;
 }

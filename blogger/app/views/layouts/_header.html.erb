@@ -1,0 +1,23 @@
+<h1 class="logo">
+    <%= link_to 'Blogger', root_path, class: 'main_link' %>
+</h1>
+<div class="header">
+    <ul>
+        <% @tags.each do |tag| %>
+            <li>
+                <%= link_to tag.name.upcase, tag_path(tag), class: "tag_link" %>
+            </li>
+        <% end %> 
+        <li>
+            <% if admin? %>
+                <%= link_to "Create New Article", new_article_path, class: 'action_link' %>
+                <% if @article && @article.id != nil %>
+                    <%= link_to 'Edit Article', edit_article_path(@article), class: 'action_link '%>
+                    <%=link_to 'Delete Article', article_path(@article), method: :delete, data: {confirm: "Really delete the article?"}, class: 'action_link' %>
+                <% end %>
+            <% end %>
+        </li>  
+    </ul>
+</div>
+<div class="cover"></div>
+<div class="underline"></div>
