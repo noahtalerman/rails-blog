@@ -35,7 +35,7 @@
 }
 
 .body_input {
-    margin: 0 0 4vh 0;
+    margin: 0 0 2vh 0;
 }
 
 .body_input label {
@@ -73,6 +73,7 @@
     border: 1px solid var(--color);
     padding: 0.5em;
     width: 25vw;
+    vertical-align: middle;
 }
 
 .submit_btn input {

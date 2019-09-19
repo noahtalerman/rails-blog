@@ -42,12 +42,13 @@
 
 .article_preview {
     font-size: var(--font2);
-    margin-top: 1vh;
+    margin-top: 1em;
     color: var(--secColor);
+    line-height: 1.5em;
 }
 
 .article_post_date {
-    margin-top: 2vh;
+    margin-top: 2em;
     font-size: var(--font3);
     color: var(--secColor);
 }
@@ -56,8 +57,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-height: 20vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3em;
 }
 
 .img_mini {
@@ -111,9 +111,19 @@ ul {
 
 .articles_list {
     width: 100%;
-    margin: 2vh 0 2vh 0;
+    margin: 2em 0 2em 0;
     list-style-type: none;
     padding: 0;
+}
+
+.custom_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px;
+    position: fixed;
+    top: 200px;
+    right: 0px;
 }
 
 .theme_btn {
@@ -136,4 +146,96 @@ ul {
 
 .theme_btn:focus {
     outline: none;
+}
+
+.text_size_btns {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.text_btn {
+    background-color: var(--background);
+    color: var(--color);
+    margin: 0;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 300;
+    border: 1px solid var(--color);
+    padding: 0.25em 1em;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.text_btn-container {
+    z-index: 1;
+}
+
+.text_btn-container span{
+    z-index: -1;
+    height: 20px;
+}
+
+/* .text_btn-container svg{
+    stroke: var(--color);
+    width: 2vw;
+    height: 2vw;
+    vertical-align: middle;
+    margin-left: 0.5vw;
+} */
+
+#span_1 {
+    font-size: 1.5vw;
+}
+
+#span_2 {
+    font-size: 1.1vw;
+}
+
+#span_3 {
+    font-size: 0.7vw;
+}
+
+.text_btn-item {
+    opacity: 0;
+    z-index: -1;
+}
+
+.text_btn:hover {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+}
+
+.text_btn:hover svg {
+    stroke: var(--secondary);
+}
+
+.text_btn:focus {
+    outline: none;
+}
+
+#text_btn_1 {
+    font-size: 1.5vw;
+    transform: translateY(-25px);
+    transition: transform 0.6s ease-out, opacity 0.2s linear, background-color 0.5s linear;
+}
+
+#text_btn_2 {
+    font-size: 1.7vw;
+    transform: translateY(-55px);
+    transition: transform 0.5s ease-out, opacity 0.3s linear, background-color 0.5s linear;
+}
+
+#text_btn_3 {
+    font-size: 1.9vw;
+    transform: translateY(-85px);
+    transition: transform 0.4s ease-out, opacity 0.4s linear, background-color 0.5s linear;
+}
+
+#text_btn_4 {
+    font-size: 2.0vw;
+    transform: translateY(-115px);
+    transition: transform 0.3s ease-out, opacity 0.3s linear, background-color 0.5s linear;
 }

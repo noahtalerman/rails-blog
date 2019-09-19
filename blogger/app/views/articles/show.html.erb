@@ -3,16 +3,37 @@
 
 <p class="header_img "><%= image_tag @article.image.url %></p>
 
-<p class="article_body"><%= @article.body %></p>
-
-<br>
+<p class="article_body">
+&emsp;&emsp;
+<% @article.body.split(/ /).each do |word|%>
+    <% if word.include? ")[" %>
+        <% links = word.split(")[")
+            @link_name = links[0].sub "(", ""
+            @link = links[1].sub "]", ""
+        %>
+        <%= link_to @link_name, @link, class: "article_hyperlink" %>
+    <% elsif word.include? "\n" %>
+        <br>
+        <br>
+        <% if word.include? "\t" %>
+            &emsp;&emsp;
+        <% end %>
+        <%= word %>
+    <% else %>
+        <%= word %>
+    <% end %>
+<% end %>
+</p>
 
 <div class="comments_container">
     <h3 class="comments_title">Comments (<%= @article.comments.size %>)</h3>
     <button class="comment_btn">Post a Comment</button>
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-labelledby="chevronRightIconTitle" stroke="#FFFFEE" stroke-width="1" stroke-linecap="square" stroke-linejoin="miter" fill="none" color="#FFFFEE"> <title id="chevronRightIconTitle">Chevron Right</title> <polyline points="10 6 16 12 10 18 10 18"/> </svg>
 </div>
 
-<%= render partial: 'comments/form' %>
+<div class="comments_form--wrapper">
+    <%= render partial: 'comments/form' %>
+</div>
 
 <div class="comments">
     <% if @article.comments.length > 0 %>
